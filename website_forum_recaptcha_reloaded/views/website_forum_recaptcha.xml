@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <template id="ask_question_with_recaptcha" inherit_id="website_forum.ask_question" name="Post Question with Google Recaptcha">
+        	<xpath expr="//button" position="before">
+        		<br/><div class="g-recaptcha" t-att-data-sitekey="website.recaptcha_site_key" ></div><br/>
+            </xpath>
+        </template>
+        
+        
+    </data>
+</openerp>
